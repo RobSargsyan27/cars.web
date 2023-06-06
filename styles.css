@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(234, 246, 254);
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    min-height: 200vh;
+    background-image: linear-gradient(to bottom,rgb(234, 246, 254)85%, rgb(81, 81, 81) );
+}
+
+.welcome{
+    background-image:linear-gradient(to bottom, rgb(0, 115, 255), rgb(0, 0, 201)80%);
+    background-size: contain;
+    background-position: bottom;
+    position: sticky;
+    top: 0;
+}
+
+.background-img{
+    background-image:url(/img/Banner-header.png);
+    background-repeat:repeat-x;
+    background-size: contain;
+    background-position: center;
+}
+
+header h1{
+    padding: 3rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #f0f8ff;
+}
+
+.welcome-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+
+.welcome-nav li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.oval-border{
+    width: 100%;
+    height: 9rem;
+    border-bottom-left-radius:1100px 100px ;
+    border-bottom-right-radius: 1100px 100px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 201),rgb(0, 115, 255) );
+}
+
+
+a{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
