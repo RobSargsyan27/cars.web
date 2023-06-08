@@ -12,17 +12,17 @@
 <body>
   <header class="welcome">
     <div class="background-img">
-     <h1>We Are Coming Soon!</h1>
-     <nav>
-        <ul class="welcome-nav">
-          <li><a href="#search">Search</a></li>
-          <li><a href="#brands">Brands</a></li>
-          <li><a href="#track-orders">Track Orders</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </nav>
+     <h1>CarParts</h1>
     </div>
   </header>
+  <nav class="sticky">
+    <ul class="welcome-nav">
+      <li><a href="#search">Search</a></li>
+      <li><a href="#brands">Brands</a></li>
+      <li><a href="#track-orders">Track Orders</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+  </nav>
   <div class="oval-border"></div>
   <main>
       <section class="search">
@@ -35,15 +35,15 @@
                   <option value="automobile">Automobile</option>
                   <option value="motorcycle">Motorcycle</option>
                 </select>
-                </label>
-                <label for="condition" class="search-label">Condition: 
+              </label>
+              <label for="condition" class="search-label">Condition: 
                   <select name="condition" id="condition">
-                    <option value="" disabled selected>Select condition</option>
+                    <option value="" disabled selected>Select Condition</option>
                     <option value="new">New</option>
                     <option value="used">Used</option>
                   </select>
-                </label>
-                <label for="brand" class="search-label">Brand: 
+              </label>
+              <label for="brand" class="search-label">Brand: 
                   <select name="brand" id="brand">
                     <option value="" disabled selected>Select Brend</option>
                     <option value="kia">Kia</option>
@@ -52,10 +52,10 @@
                     <option value="mersedec-benz">Mersedec-Benz</option>
                     <option value="nissan">Nissan</option>
                   </select>
-                </label>
-                <label for="type" class="search-label">Autopart Type: 
+              </label>
+              <label for="type" class="search-label">Autopart Type: 
                   <select name="type" id="type">
-                    <option selected disabled value="">Select type of autopart</option>
+                    <option selected disabled value="">Select AutoPart Type</option>
                     <option value="body">Body</option>
                     <option value="chassis">Chassis</option>
                     <option value="light">Lights</option>
@@ -65,8 +65,8 @@
                     <option value="airbag">AirBags</option>
                     <option value="accessories">Accessories</option>
                   </select>
-                </label>
-                <label for="color" class="search-label">Color: 
+              </label>
+              <label for="color" class="search-label">Color: 
                   <select name="color" id="color">
                     <option value="">Select Color</option>
                     <option value="black">Black</option>
@@ -75,28 +75,28 @@
                     <option value="red">Red</option>
                     <option value="green">Green</option>
                   </select>
-                </label>
-                <label for="authentication" class="search-label">Authentication:
+              </label>
+              <label for="authentication" class="search-label">Authentication:
                   <select name="authentication" id="authentication">
                     <option value="">Select Option</option>
                     <option value="original">Original</option>
                     <option value="oem">OEM</option>
                     <option value="after-market">After Market</option>
                   </select>
-                </label>
-                <label for="price" class="search-label">Price:
+              </label>
+              <label for="price" class="search-label">Price:
                   <select name="price" id="price">
-                    <option value="">Select price</option>
+                    <option value="">Select Price</option>
                     <option value="100">$0 - $100</option>
                     <option value="500">$100 - $500</option>
                     <option value="1500">$500 - $1500</option>
                     <option value="5000">$1500 - $5000</option>
                     <option value="5000+">$5000+</option>
                   </select>
-                </label>
+              </label>
           </form>
            <div class="search-main">
-            <h3 class="section-sec-heading">Recently Added</h3>
+            <h3 class="section-sec-heading" id="recently-added">Recently Added</h3>
             <div class="search-part">
                 <figure class="part-fig hover">
                   <img class="part-img" src="/img/bilstein-sus.jpeg" alt="AutoPart" loading="lazy">
@@ -138,7 +138,8 @@
                   <img class="part-img" src="/img/X7-Front-UnderCover.jpeg" alt="AutoPart" loading="lazy">
                   <figcaption class="part-figcap" >BMW X7 Front UnderCover</figcaption>
                 </figure>
-            </div>
+             </div>
+           </div>
         </section>
       </section>
       <section class="brands">
@@ -170,8 +171,8 @@
               </figure>
           </div>
           <div class="ad">
-              <h3 id="ad-heading" class="section-sec-heading">20% off from all autoparts of the Bilstein till July 1</h3>
-              <div><iframe id="bilstein-ad" src="http://www.youtube.com/embed/ltTkxoB4OWo?autoplay=1&mute=1&loop=1&playlist=ltTkxoB4OWo&controls=0"></iframe></div>
+              <h3 id="ad-heading" class="section-sec-heading">20% off from all autoparts of the Bilstein <span>till July 1</span></h3>
+              <iframe id="bilstein-ad" src="http://www.youtube.com/embed/ltTkxoB4OWo?autoplay=1&mute=1&loop=1&playlist=ltTkxoB4OWo&controls=0"></iframe>
           </div>
       </section>
       <section class="track-orders">
@@ -198,8 +199,30 @@
           </div>
       </section>
       <section class="contact">
-        <h2 class="section-heading">Contact Us</h2>
-        
+        <h2 class="section-heading" id="contact-us">Contact Us</h2>
+        <section class="contact-info">
+            <h3 class="section-sec-heading" id="location-info">Location info:</h3>
+            <h3 class="section-sec-heading" id="contact-us">Contact Us:</h3>
+            <iframe id="google-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2668.1047951496134!2d10.7301833!3d48.0310027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479c17a404d50271%3A0x35d47a559386582c!2zQWxwZW5zdHJhw59lLCA4NjgwNyBCdWNobG9lLCDUs9Wl1oDVtNWh1bbVq9Wh!5e0!3m2!1shy!2sam!4v1686232758217!5m2!1shy!2sam" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="https://httpbin.org/" id="contact-form">
+                <label for="full-name" class="contact-label">
+                    <input class="contact-input" id="full-name" type="text" required autocomplete="on" placeholder="Your Full Name:">
+                </label>
+                <label for="telephone" class="contact-label" >
+                  <input class="contact-input" id="telephone" type="tel" required autocomplete="on" placeholder="Your Phone Number:" pattern="[0-9]{9}" title="Write your phone number without country code.">
+                </label>
+                <label for="email" class="contact-label">
+                  <input class="contact-input" id="email" type="email" required autocomplete="on" placeholder="Your Email:">
+                </label>
+                <label for="comment" class="contact-label">
+                    <textarea class="contact-input" name="comment" id="comment" cols="30" rows="10" placeholder="Write your comments here(Optional):"></textarea>
+                </label>
+                  <div class="button contact-label">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                  </div>
+            </form>
+        </section>
       </section>
   </main>
 </body>
