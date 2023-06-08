@@ -16,7 +16,7 @@
      <nav>
         <ul class="welcome-nav">
           <li><a href="#search">Search</a></li>
-          <li><a href="">Brands</a></li>
+          <li><a href="#brands">Brands</a></li>
           <li><a href="">Track Orders</a></li>
           <li><a href="">Contact Us</a></li>
         </ul>
@@ -25,8 +25,8 @@
   </header>
   <div class="oval-border"></div>
   <main>
-      <section class="search" id="search">
-        <h2>Search</h2>
+      <section class="search">
+        <h2 class="section-heading" id="search">Search</h2>
         <section class="search-all">
           <form action="" class="search-options">
               <label for="vehicle" class="search-label"> Vehicle: 
@@ -43,8 +43,8 @@
                     <option value="used">Used</option>
                   </select>
                 </label>
-                <label for="brend" class="search-label">Brend: 
-                  <select name="brend" id="brend">
+                <label for="brand" class="search-label">Brand: 
+                  <select name="brand" id="brand">
                     <option value="" disabled selected>Select Brend</option>
                     <option value="kia">Kia</option>
                     <option value="volvo">Volvo</option>
@@ -96,7 +96,7 @@
                 </label>
           </form>
            <div class="search-main">
-            <h3>Recently Added</h3>
+            <h3 class="section-sec-heading">Recently Added</h3>
             <div class="search-part">
                 <figure class="part-fig">
                   <img class="part-img" src="/img/bilstein-sus.jpeg" alt="AutoPart" loading="lazy">
@@ -140,6 +140,42 @@
                 </figure>
             </div>
         </section>
+      </section>
+      <section class="brands">
+          <h2 class="section-heading" id="brands">We are working with leading autopart brands.</h2>
+          <div class="brands-main">
+              <figure class="brand-fig">
+                <img class="brand-img" src="/img/Bilstein-logo.png" alt="Bilstein Logo" loading="lazy">
+                <figcaption class="brand-figcap">Bilstein</figcaption>
+              </figure>
+              <figure class="brand-fig">
+                <img class="brand-img" src="/img/bosch-automative-logo.jpeg" alt="Bosch Logo" loading="lazy">
+                <figcaption class="brand-figcap">Bosch Automative</figcaption>
+              </figure>
+              <figure class="brand-fig">
+                <img class="brand-img" src="/img/h&r-logo.png" alt="H&R" loading="lazy">
+                <figcaption class="brand-figcap">H&R</figcaption>
+              </figure>
+              <figure class="brand-fig">
+                <img class="brand-img" src="/img/hella-logo.png" alt="Hella" loading="lazy">
+                <figcaption class="brand-figcap">Hella</figcaption>
+              </figure>
+              <figure class="brand-fig">
+                <img class="brand-img" src="/img/varta-logo.png" alt="Varta" loading="lazy">
+                <figcaption class="brand-figcap">Varta</figcaption>
+              </figure>
+              <figure class="brand-fig">
+                <img class="brand-img" src="/img/csf-logo.webp" alt="CSF" loading="lazy">
+                <figcaption class="brand-figcap">CSF</figcaption>
+              </figure>
+          </div>
+          <div class="ad">
+              <h3 id="ad-heading" class="section-sec-heading">20% off from all autoparts of the Bilstein till July 1</h3>
+              <div><iframe id="bilstein-ad" src="http://www.youtube.com/embed/ltTkxoB4OWo?autoplay=1&mute=1&loop=1"></iframe></div>
+          </div>
+      </section>
+      <section class="track-orders">
+          
       </section>
   </main>
 </body>
