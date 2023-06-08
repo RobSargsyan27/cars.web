@@ -317,7 +317,7 @@ a{
     width: 90%;
     margin: 2rem auto 0 auto;
 }
-
+        /* --Map with location */
 #google-location{
     box-shadow: 0 0 10px black;
     width: 95%;
@@ -327,7 +327,7 @@ a{
     grid-column: 1/2;
 }
 
-
+     /* --Form for sending messages */
 #contact-form{
     align-self: stretch;
     display: flex;
@@ -381,6 +381,8 @@ button{
   border: 1px solid gray;
   border-radius: 10px;
 }
+
+/* -Media Queries For Different Screen Width */
 
  @media  screen and (max-width:1180px) {
     .part-img{
